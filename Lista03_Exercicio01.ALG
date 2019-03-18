@@ -1,26 +1,32 @@
 Algoritmo "Exercicio01"
 //
 //
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Mylena Costa de Souza
 // Data atual  : 16/03/2019
 Var
-   // Seção de Declarações das variáveis
-   valores: vetor [1..15] de inteiro
-   Maior, menor: real
-   contador: inteiro
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+
+   num,maior, i, menor: inteiro
+
 
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   para contador de 1 ate 15 faca
-      escreva("Digite o ",contador," valor: ")
-      leia(valores[contador])
-      se (valores[contador]>maior) então
-         maior<-valores[contador]
+   Escreva("Digite um nÃºmero: ")
+   leia(num)
+
+   maior <-num
+   menor <-num
+   para i de 2 ate 15 faca
+      escreva("Digite o ",i," valor: ")
+      leia(num)
+
+      se num>maior entao
+         maior<- num
+
       fimse
-      se (valores[contador]<menor) então
-         menor<-valores[contador]
+      se num<menor entao
+         menor<-num
       fimse
    fimpara
    escreval("Maior valor: ",maior)
