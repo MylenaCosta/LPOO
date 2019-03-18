@@ -1,9 +1,9 @@
 Algoritmo "Exercicio03"
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 17/03/2019
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
 
    x:real
    i:inteiro
@@ -11,13 +11,13 @@ Var
    num:real
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
    soma<- 0
-   num <- -1
-
+   x<-1
    para i de 1 ate 50 faca
-      x <- i
-      soma <- soma + (num+2)/x
+
+      soma <- (x/i)+soma
+      x <- x+2
    fimpara
 
    escreval ("Soma = ", soma)
